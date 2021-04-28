@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+body {
+    margin-top: 0;
+    font-family: Acme, sans-serif;
+}
+
+#container {
+    max-width: 100%;
+    margin: 0% 10%;
+}
+
+.logo {
+    max-width: 70%;
+    margin: 0% 15%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    float: right;
+    margin: 0% 15%;
+}
+
+.menu ul li {
+    display: inline;
+    font-size: 14px;
+    list-style: none;
+}
+
+.menu ul li a {
+    padding: 2px 30px;
+    display: inline;
+    font-size: 20px;
+    background-color: #b4c1d3;
+    color: rgb(38, 19, 105);
+    text-decoration: none;
+    border-bottom: 3px solid #110233;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.box {
+    margin: 0% 15%;
+}
+
+.natureza_cargo {
+    margin-top: 2%;
+}
+
+#form1 {
+    position: relative;
+    width: 100%;
+}
+
+#form1 input.txtNm {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 90%;
+}
+
+#form1 input.txtEnd {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 50%;
+}
+
+#form1 input.txtCidade {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 30%;
+}
+
+#form1 select.listUf {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 25%;
+}
+
+#form1 fieldset.dados_profissionais {
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+#form1 fieldset.dados_profissionais input[type=checkbox]+label {
+    width: 80%;
+    display: inline-block;
+    height: 20px;
+    padding: 0 0 0 25px;
+    margin: 0 10px 0 0;
+}
+
+.area_interesse {
+    margin-top: 5%;
+}
+
+.miniCurriculo {
+    margin-top: 5%;
+}
+
+.botoes {
+    margin-top: 2%;
+}
+
+hr {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

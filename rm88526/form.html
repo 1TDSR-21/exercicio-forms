@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Ex. Form</title>
+    <meta charset="UTF-8">
+    <link href="./img/form_bw.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/estilos.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Oswaldo Moreira">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <header class="cabecalho">
+            <img class="logo" src="./img/banner-form-1.jpg" alt="imagem tecnologica do setor da aviacao">
+            <div>
+                <nav class="menu">
+                    <ul id="opcoes_do_menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="conteudo">
+            <div class="box">
+                <div id="form1">
+                    <form action="#" method="GET">
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <label for="idTxtNm">Nome:</label>
+                            <input type="text" name="txtNm" placeholder="Digite seu nome." id="idTxtNm" class="txtNm" oninvalid="setCustomValidity('Este campo não pode ficar sem preenchimento!')" pattern="[a-zA-Z]+$">
+                            <label for="idTxtEnd">Endereço:</label>
+                            <input type="text" name="txtEnd" placeholder="Digite seu Logradouro." id="idTxtEnd" class="txtEnd" oninvalid="setCustomValidity('Este campo não pode ficar sem preenchimento!')">
+                            <label for="idTxtCidade">Cidade:</label>
+                            <input type="text" name="txtCidade" placeholder="Digite sua Cidade." id="idTxtCidade" class="txtCidade" oninvalid="setCustomValidity('Este campo não pode ficar sem preenchimento!')" pattern="[a-zA-Z]+">
+                            <label for="idListUF">Estado:</label>
+                            <select id="idListUF" name="listUf" class="listUf">
+                              <option value="nao_selecionado">Selecione seu estado...</option>
+                              <option value="acre">Acre - AC</option>
+                              <option value="alagoas">Alagoas - AL</option>
+                              <option value="amapa">Amapa - AP</option>
+                              <option value="amazonas">Amazonas - AM</option>
+                              <option value="bahia">Bahia - BA</option>
+                              <option value="ceara">Ceará - CE</option>
+                              <option value="distrito_federal">Distrito Federal - DF</option>
+                              <option value="espirito_santo">Espírito Santo - ES</option>
+                              <option value="goias">Goiás - GO</option>
+                              <option value="maranhao">Maranhão - MA</option>
+                              <option value="mato_grosso">Mato Grosso - MT</option>
+                              <option value="mato_grosso_sul">Mato Grosso do Sul - MS</option>
+                              <option value="Minas Gerais">Minas Gerais - MG</option>
+                              <option value="para">Pará - PA</option>
+                              <option value="paraiba">Paraíba - PB</option>
+                              <option value="parana">Paraná - PR</option>
+                              <option value="pernambuco">Pernambuco - PE</option>
+                              <option value="piaui">Piauí - PI</option>
+                              <option value="rio_de_janeiro">Rio de Janeiro - RJ</option>
+                              <option value="rio_grande_do_norte">Rio Grande do Norte - RN</option>
+                              <option value="rio_grande_do_sul">Rio Grande do Sul - RS</option>
+                              <option value="rondonia">Rondonia - RO</option>
+                              <option value="roraima">Roraima - RR</option>
+                              <option value="santa_catarina">Santa Catarina - SC</option>
+                              <option value="sao_paulo">São Paulo - SP</option>
+                              <option value="sergipe">Sergipe - SE</option>
+                              <option value="tocantins">Tocantins - TO</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="dados_profissionais">
+                            <legend>Dados Profissionais</legend>
+                            <div class="natureza_cargo">
+                                Natureza do Cargo
+                            </div>
+                            <input class="rd_dados_pessoais" type="radio" id="idRdGerente" name="rd_natureza_cargo" value="Gerência">
+                            <label for="idRdGerente">Gerencia</label>
+                            <input class="rd_dados_pessoais" type="radio" id="idRdFinanceiro" name="rd_natureza_cargo" value="Financeiro">
+                            <label for="idRdFinanceiro">Financeiro</label>
+                            <input class="rd_dados_pessoais" type="radio" id="idRdRecepcao" name="rd_natureza_cargo" value="Recepção">
+                            <label for="idRdRecepcao">Recepção</label>
+                            <input class="rd_dados_pessoais" type="radio" id="idRdAdmnistrativo" name="rd_natureza_cargo" value="Administrativo">
+                            <label for="idRdAdministrativo">Administrativo</label>
+                            <input class="rd_dados_pessoais" type="radio" id="idRdJuridico" name="rd_natureza_cargo" value="Juridico">
+                            <label for="idRdJuridico">Jurídico</label>
+                            <div class="area_interesse">
+                                Area de Interesse
+                            </div>
+                            <div>
+                                <input class="cb" type="checkbox" id="idCbComputacao" name="cbForm1" value="Computação">
+                                <label for="idCbComputacao">Computação</label><br>
+                                <input class="cb" type="checkbox" id="idCbBiologia" name="cbForm1" value="Biologia">
+                                <label for="idCbBiologia">Biologia</label><br>
+                                <input class="cb" type="checkbox" id="idCbMeioAmbiente" name="cbForm1" value="MeioAmbiente">
+                                <label for="idCbMeioAmbiente">Meio Ambiente</label><br>
+                                <input class="cb" type="checkbox" id="idCbEngenharia" name="cbForm1" value="Engenharia">
+                                <label for="idCbEngenharia">Engenharia</label><br>
+                                <input class="cb" type="checkbox" id="idCbHistoria" name="cbForm1" value="Historia">
+                                <label for="idCbHistoria">Historia</label><br>
+                            </div>
+                            <div class="miniCurriculo">
+                                Mini-Currículo
+                                <textarea name="txtMC" rows="5" cols="60">
+                                </textarea>
+                                <div class="botoes">
+                                    <input type="submit" value="ENVIAR">
+                                    <input type="reset" value="Limpar">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <hr>
+                <div id="form2">
+
+                </div>
+                <div id="form3">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="rodape">
+
+        </footer>
+    </div>
+</body>
+
+</html>
