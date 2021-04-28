@@ -35,7 +35,7 @@
             <div class="box">
                <a href="#">SOBRE</a> 
 
-               <form name="dados" action="forms.html" method="get">
+               <form name="dados" action="#" method="get">
                    <h1>Cadastro de Candidatos</h1>
                    
                    <fieldset>
@@ -56,7 +56,7 @@
 
                    <fieldset>
                        <legend>Dados Profissionais</legend>
-                       <h2>Natureza do Cargo</h2>
+                       <p>Natureza do Cargo</p>
                        <div>
                            <input type="radio" name="cargo" value="G"/> Gerência
                            <input type="radio" name="cargo" value="F"/> Financeiro
@@ -65,7 +65,7 @@
                            <input type="radio" name="cargo" value="J"/> Juridico
                        </div>
 
-                       <h2>Área de interesse</h2>
+                       <p>Área de interesse</p>
                        <div>
                         <input type="checkbox" name="Computação"/> Computação
                         <input type="checkbox" name="Biologia"/> Biologia
@@ -89,10 +89,136 @@
 
             <div class="box">
                 <a href="#">NOTÍCIAS</a> 
+                <form name="dados" action="#" method="get">
+                    <fieldset>
+                        <h1>Métodos de Pagamentos</h1>
+
+                        <p>Campos obrigatórios são seguidos por*..</p>
+
+                        <h1>Informação de Contato</h1>
+
+                        <fieldset>
+                            <legend>Título</legend>
+                            <input type="radio" name="titulo" value="A"/> Ás <br>
+                            <input type="radio" name="titulo" value="Rs"/> Reis <br>
+                            <input type="radio" name="titulo" value="R"/> Rainha <br>
+                        </fieldset> 
+                            <div>
+                                <label for="idNome">Nome:*..</label>
+                                <input id="idNome" type="text" name="nome" required> 
+                            </div> 
+                            
+                            <div>
+                                <label for="idEmail">E-mail:*..</label>
+                                <input id="idEmail" type="text" name="e-mail" required> 
+                            </div> 
+                           
+                            <div>
+                                <label for="idSenha">Senha:*..</label>
+                                <input id="idSenha" type="password" name="senha" required>
+                            </div> 
+                            
+
+                        <h1>Informações de Pagamento</h1>
+
+                        <label for="idTipoCartao">Tipo de Cartão:</label>
+                        <select name="cartao" id="idTipoCartao">
+                           <option value="VS">VISA</option>
+                           <option value="MC">Master Card</option>
+                           <option value="CL">Cielo</option>
+                        </select>
+
+                        <div>
+                            <label for="idValor">Número do Cartão:*..</label>
+                            <input type="number" name="valor" id="idValor" required>
+                        </div>
+
+                        <div>
+                            <label for="idData">Data de Expiração:*..</label>
+                            <input type="date" name="data" id="idData" required>
+                        </div>
+
+                        <p>formato da data dd/mm/yyyy</p>
+
+                        <div>
+                            <input type="submit" value="Validar o Pagamento">
+                        </div>
+
+                    </fieldset>
+                </form>
             </div>
 
             <div class="box">
                 <a href="#">CONTATOS</a>
+                <form name="dados" action="#" method="get">
+                    <fieldset>
+                        <legend>Sistema de Gestão Acadêmica</legend>
+                        <h1>Manutenção de Usuários do Sistema Interno</h1>
+                        
+                        <div>
+                            <label for="idLogin">Login</label>
+                            <input id="idLogin" type="text" name="idLogin">
+                        </div>
+
+                        <div>
+                            <label for="idSenha">Senha</label>
+                            <input id="idSenha" type="password" name="senha">
+                        </div>
+
+                        <div>
+                            Status:
+                            <select name="status" id="">
+                                <option value="I">Inativo</option>
+                                <option value="A">Ativo</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="idTipo">Tipo</label>
+                            <input type="radio" name="tipo" value="tec"/> Técnico
+                            <input type="radio" name="tipo" value="prof"/> Professor
+                            <input type="radio" name="tipo" value="Alu"/> Aluno
+                        </div>
+
+                        <div>
+                            <label for="idData">Data Criação</label>
+                            <input type="date" name="dataCriacao"/>
+                        </div>
+                            
+                        <div>
+                            <label for="idPerfil">Perfil</label>
+                            <input type="radio" name="convidado" value="tec"/> Convidado
+                            <input type="radio" name="administrador" value="prof"/> Administrador
+                        </div>
+
+                        <div>
+                            <label for="idObservacoes">Observações:</label>
+                            <textarea name="Observações" id="idObservacoes" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="idModulo">Módulos</label>
+                                <input type="checkbox" name="compras"/> Compras
+                                <input type="checkbox" name="biblioteca"/> Biblioteca
+                                <input type="checkbox" name="academico"/> Acadêmico
+                            </div>
+    
+                            <div>
+                                <input type="checkbox" name="documentacao"/> Documentação
+                                <input type="checkbox" name="recursoHumanos"/> Recursos Humanos
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Cadastrar">
+                            <input type="reset" value="Excluir">
+                        </div>
+                        
+
+
+                    </fieldset>
+                </form>
             </div>
 
         </section>
