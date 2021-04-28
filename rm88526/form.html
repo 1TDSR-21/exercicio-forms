@@ -73,18 +73,18 @@
                         </fieldset>
                         <fieldset class="dados_profissionais">
                             <legend>Dados Profissionais</legend>
-                            <div>
+                            <div class="natureza_cargo">
                                 Natureza do Cargo
                             </div>
-                            <input class="rd_dados_pessoais" type="radio" id="idRdGerente" name="rdGerente" value="Gerência">
+                            <input class="rd_dados_pessoais" type="radio" id="idRdGerente" name="rd_natureza_cargo" value="Gerência">
                             <label for="idRdGerente">Gerencia</label>
-                            <input class="rd_dados_pessoais" type="radio" id="idRdFinanceiro" name="rdFinanceiro" value="Financeiro">
+                            <input class="rd_dados_pessoais" type="radio" id="idRdFinanceiro" name="rd_natureza_cargo" value="Financeiro">
                             <label for="idRdFinanceiro">Financeiro</label>
-                            <input class="rd_dados_pessoais" type="radio" id="idRdRecepcao" name="rdRecepcao" value="Recepção">
+                            <input class="rd_dados_pessoais" type="radio" id="idRdRecepcao" name="rd_natureza_cargo" value="Recepção">
                             <label for="idRdRecepcao">Recepção</label>
-                            <input class="rd_dados_pessoais" type="radio" id="idRdAdmnistrativo" name="rdAdministrativo" value="Administrativo">
+                            <input class="rd_dados_pessoais" type="radio" id="idRdAdmnistrativo" name="rd_natureza_cargo" value="Administrativo">
                             <label for="idRdAdministrativo">Administrativo</label>
-                            <input class="rd_dados_pessoais" type="radio" id="idRdJuridico" name="rdJuridico" value="Juridico">
+                            <input class="rd_dados_pessoais" type="radio" id="idRdJuridico" name="rd_natureza_cargo" value="Juridico">
                             <label for="idRdJuridico">Jurídico</label>
                             <div class="area_interesse">
                                 Area de Interesse
@@ -105,12 +105,15 @@
                                 Mini-Currículo
                                 <textarea name="txtMC" rows="5" cols="60">
                                 </textarea>
+                                <div class="botoes">
+                                    <input type="submit" value="ENVIAR">
+                                    <input type="reset" value="Limpar">
+                                </div>
                             </div>
                         </fieldset>
                     </form>
-
-
                 </div>
+                <hr>
                 <div id="form2">
 
                 </div>

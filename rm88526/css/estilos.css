@@ -47,6 +47,10 @@ a:hover {
     margin: 0% 15%;
 }
 
+.natureza_cargo {
+    margin-top: 2%;
+}
+
 #form1 {
     position: relative;
     width: 100%;
@@ -78,6 +82,7 @@ a:hover {
 
 #form1 fieldset.dados_profissionais {
     margin-top: 5%;
+    border-radius: 10px;
 }
 
 #form1 fieldset.dados_profissionais input[type=checkbox]+label {
@@ -94,4 +99,13 @@ a:hover {
 
 .miniCurriculo {
     margin-top: 5%;
+}
+
+.botoes {
+    margin-top: 2%;
+}
+
+hr {
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
