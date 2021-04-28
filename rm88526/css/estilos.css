@@ -43,5 +43,35 @@ a:hover {
     text-decoration: underline;
 }
 
+.box {
+    margin: 0% 15%;
+}
 
+#form1 {
+    position: relative;
+    width: 100%;
+}
+
+#form1 input.txtNm {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 90%;
+}
+
+#form1 input.txtEnd {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 50%;
+}
+
+#form1 input.txtCidade {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 30%;
+}
+
+#form1 select.listUf {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 25%;
 }
