@@ -6,10 +6,102 @@
     <title>FORMS</title>
 
     <link rel="stylesheet" href="./css/estilo.css" type="text/css">
-    
+
 </head>
 
 <body>
+    <div id="container">
+
+        <header>
+            <div class="logo">
+                <img src="img/banner-form-1.jpg" alt="Logo ecsrita nossa empresa ">
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <li><a href="#" target="_self" id="active">HOME</a></li>
+                    <li><a href="#" target="_self" id="active">Sobre</a></li>
+                    <li><a href="#" target="_self" id="active">Notícias</a></li>
+                    <li><a href="#" target="_self" id="active">Contato</a></li>
+                </nav>
+            </div>
+            
+        </header>
+
+        <section>
+
+            <img src="img/banner.png" alt="Logo de uma caixa">
+
+            <div class="box">
+               <a href="#">SOBRE</a> 
+
+               <form name="dados" action="forms.html" method="get">
+                   <h1>Cadastro de Candidatos</h1>
+                   
+                   <fieldset>
+                       <legend>Dados pessoais</legend>
+                       <label for="idNome">Nome:</label>
+                       <input id="idNome" type="text" name="nome"><br>
+                       <label for="idEndereco">Endereço:</label>
+                       <input id="idEndereco" type="text" name="endreço"><br>
+                       <label for="idCidade">Cidade:</label>
+                       <input id="idCidade" type="text" name="cidade"><br>
+                       <label for="idEstado">Estado:</label>
+                       <select name="estado" id="idEstado">
+                           <option value="SP">São Paulo</option>
+                           <option value="RJ">Rio de Janeiro</option>
+                           <option value="MG">Minas Gerais</option>
+                       </select>
+                   </fieldset>
+
+                   <fieldset>
+                       <legend>Dados Profissionais</legend>
+                       <h2>Natureza do Cargo</h2>
+                       <div>
+                           <input type="radio" name="cargo" value="G"/> Gerência
+                           <input type="radio" name="cargo" value="F"/> Financeiro
+                           <input type="radio" name="cargo" value="R"/> Recepção
+                           <input type="radio" name="cargo" value="A"/> Administrativo
+                           <input type="radio" name="cargo" value="J"/> Juridico
+                       </div>
+
+                       <h2>Área de interesse</h2>
+                       <div>
+                        <input type="checkbox" name="Computação"/> Computação
+                        <input type="checkbox" name="Biologia"/> Biologia
+                        <input type="checkbox" name="Meio Ambiente"/> Meio Ambiente
+                        <input type="checkbox" name="Engenharia"/> Engenharia
+                        <input type="checkbox" name="Historia"/> Historia
+                       </div>
+
+                       <div>
+                           <label for="idCurriculo">Mini-Curriculo:</label>
+                           <textarea name="5" id="idCurriculo" cols="30" rows="10"></textarea>
+                       </div>
+                   </fieldset>
+
+                   <div>
+                       <input type="submit" value="Enviar">
+                       <input type="reset" value="Limpar">
+                   </div>
+               </form>
+            </div>
+
+            <div class="box">
+                <a href="#">NOTÍCIAS</a> 
+            </div>
+
+            <div class="box">
+                <a href="#">CONTATOS</a>
+            </div>
+
+        </section>
+
+        <footer>
+            <p> <small class="creditos"><a href="#"> Felicio Junior &copy;</a></small></p>
+        </footer>
+
+    </div>
     
 </body>
 
