@@ -147,6 +147,16 @@ p {
     margin-left: 17%;
 }
 
-#idCbCartoes {
+#idListCartoes {
     margin-left: 1%
+}
+
+#idDtDataCartao {
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+#idValidaPay {
+    margin-top: 3%;
+    margin-left: 40%;
 }

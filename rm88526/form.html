@@ -145,7 +145,7 @@
 
                                 <div class="cbCartao">
                                     <label for="idListCartoes">Tipo de Cartão:</label>
-                                    <select id="idCbCartoes" name="listCartoes" id="idListCartoes">
+                                    <select name="listCartoes" id="idListCartoes">
                                     <option value="sem_selecao">Selecione seu cartão...</option>
                                     <option value="MasterCard">MasterCard</option>
                                     <option value="Visa">Visa</option>
@@ -157,7 +157,11 @@
 
                                 <label class="lbCartao" for="idTxtNrCartao">Numero do Cartão:</label>
                                 <input type="text" name="txtNrCartao" placeholder="Informe o número do cartão." id="idTxtNrCartao">
+                                <label class="lbCartao" for="idDtDataCartao">Data de Expiração:</label>
+                                <input type="date" name="dtDataCartao" id="idDtDataCartao">
+
                             </div>
+                            <input id="idValidaPay" type="submit" value="Validar o Pagamento">
                         </fieldset>
                     </form>
                 </div>
