@@ -132,16 +132,31 @@
                                     <input type="radio" name="rdRainha" id="idRdRainha" value="rainha" />
                                     <label for="rdRainha">Rainha</label><br/>
                                 </fieldset>
-                                <label for="idTxtPayNm">Nome:</label>
+                                <label class="lbPay" for="idTxtPayNm">Nome:</label>
                                 <input type="text" name="txtPayNm" placeholder="Digite seu nome." id="idTxtPayNm">
-                                <label for="idTxtPayEmail">E-mail:</label>
+                                <label class="lbPay" for="idTxtPayEmail">E-mail:</label>
                                 <input type="text" name="txtPayemail" placeholder="Digite seu e-mail." id="idTxtPayEmail">
-                                <label for="idPwPay">Password:</label>
+                                <label class="lbPw" for="idPwPay">Password:</label>
                                 <input type="password" name="pwPay" placeholder="Digite sua senha" id="idPwPay">
-                            </div>
-                            <h3>Informações de Pagamento</h3>
-                            <div class="pagamento">
 
+
+                                <h3>Informações de Pagamento</h3>
+
+
+                                <div class="cbCartao">
+                                    <label for="idListCartoes">Tipo de Cartão:</label>
+                                    <select id="idCbCartoes" name="listCartoes" id="idListCartoes">
+                                    <option value="sem_selecao">Selecione seu cartão...</option>
+                                    <option value="MasterCard">MasterCard</option>
+                                    <option value="Visa">Visa</option>
+                                    <option value="Elo">Elo</option>
+                                    <option value="AmericanExpress">American Express</option>
+                                    <option value="Dinners">Dinners Club</option>
+                            </select>
+                                </div>
+
+                                <label class="lbCartao" for="idTxtNrCartao">Numero do Cartão:</label>
+                                <input type="text" name="txtNrCartao" placeholder="Informe o número do cartão." id="idTxtNrCartao">
                             </div>
                         </fieldset>
                     </form>

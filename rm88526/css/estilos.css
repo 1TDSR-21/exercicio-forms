@@ -109,3 +109,44 @@ hr {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+
+p {
+    color: rgb(235, 54, 54);
+}
+
+#payRadio {
+    width: 65%;
+    margin-left: 30%;
+}
+
+.pagamento input[type=text] {
+    width: 67%;
+    margin-top: 2%;
+    margin-left: 1%
+}
+
+.pagamento input[type=password] {
+    width: 67%;
+    margin-top: 2%;
+    margin-left: 1%
+}
+
+.lbCartao {
+    margin-left: 13%;
+}
+
+.lbPay {
+    margin-left: 23%;
+}
+
+.lbPw {
+    margin-left: 20%;
+}
+
+.cbCartao {
+    margin-left: 17%;
+}
+
+#idCbCartoes {
+    margin-left: 1%
+}
