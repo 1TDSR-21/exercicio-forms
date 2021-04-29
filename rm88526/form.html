@@ -41,7 +41,7 @@
                             <input type="text" name="txtCidade" placeholder="Digite sua Cidade." id="idTxtCidade" class="txtCidade">
                             <label for="idListUF">Estado:</label>
                             <select id="idListUF" name="listUf" class="listUf">
-                              <option value="nao_selecionado">Selecione seu estado...</option>
+                              <option selected="selected" value="nao_selecionado">Selecione seu estado...</option>
                               <option value="ac">Acre - AC</option>
                               <option value="al">Alagoas - AL</option>
                               <option value="ap">Amapa - AP</option>
@@ -76,7 +76,7 @@
                             <div class="natureza_cargo">
                                 Natureza do Cargo
                             </div>
-                            <input class="rd_dados_pessoais" type="radio" id="idRdGerente" name="rd_natureza_cargo" value="Gerência">
+                            <input class="rd_dados_pessoais" checked="checked" type="radio" id="idRdGerente" name="rd_natureza_cargo" value="Gerência">
                             <label for="idRdGerente">Gerencia</label>
                             <input class="rd_dados_pessoais" type="radio" id="idRdFinanceiro" name="rd_natureza_cargo" value="Financeiro">
                             <label for="idRdFinanceiro">Financeiro</label>
@@ -146,7 +146,7 @@
                                 <div class="cbCartao">
                                     <label for="idListCartoes">Tipo de Cartão:</label>
                                     <select name="listCartoes" id="idListCartoes">
-                                    <option value="sem_selecao">Selecione seu cartão...</option>
+                                    <option selected="selected" value="0">Selecione seu cartão...</option>
                                     <option value="MasterCard">MasterCard</option>
                                     <option value="Visa">Visa</option>
                                     <option value="Elo">Elo</option>
