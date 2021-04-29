@@ -34,11 +34,11 @@
                         <fieldset>
                             <legend>Dados Pessoais</legend>
                             <label for="idTxtNm">Nome:</label>
-                            <input type="text" name="txtNm" placeholder="Digite seu nome." id="idTxtNm" class="txtNm" oninvalid="setCustomValidity('Este campo não pode ficar sem preenchimento!')" pattern="[a-zA-Z]+$">
+                            <input type="text" name="txtNm" placeholder="Digite seu nome." id="idTxtNm" class="txtNm">
                             <label for="idTxtEnd">Endereço:</label>
-                            <input type="text" name="txtEnd" placeholder="Digite seu Logradouro." id="idTxtEnd" class="txtEnd" oninvalid="setCustomValidity('Este campo não pode ficar sem preenchimento!')">
+                            <input type="text" name="txtEnd" placeholder="Digite seu Logradouro." id="idTxtEnd" class="txtEnd">
                             <label for="idTxtCidade">Cidade:</label>
-                            <input type="text" name="txtCidade" placeholder="Digite sua Cidade." id="idTxtCidade" class="txtCidade" oninvalid="setCustomValidity('Este campo não pode ficar sem preenchimento!')" pattern="[a-zA-Z]+">
+                            <input type="text" name="txtCidade" placeholder="Digite sua Cidade." id="idTxtCidade" class="txtCidade">
                             <label for="idListUF">Estado:</label>
                             <select id="idListUF" name="listUf" class="listUf">
                               <option value="nao_selecionado">Selecione seu estado...</option>
@@ -115,7 +115,36 @@
                 </div>
                 <hr>
                 <div id="form2">
+                    <form action="#" method="GET">
+                        <fieldset id="payform">
+                            <h1>Método de Pagamento</h1>
+                            <p>Campos obrigatórios são seguidos por*</p>
+                            <h3>Informações de Contato</h3>
+                            <div class="pagamento">
+                                <fieldset id="payRadio">
+                                    <legend>
+                                        Título
+                                    </legend>
+                                    <input checked="checked" type="radio" name="rdAs" id="idRdAs" value="as" />
+                                    <label for="rdAs">Ás</label><br/>
+                                    <input type="radio" name="rdRei" id="idRdRei" value="rei" />
+                                    <label for="rdRei">Rei</label><br/>
+                                    <input type="radio" name="rdRainha" id="idRdRainha" value="rainha" />
+                                    <label for="rdRainha">Rainha</label><br/>
+                                </fieldset>
+                                <label for="idTxtPayNm">Nome:</label>
+                                <input type="text" name="txtPayNm" placeholder="Digite seu nome." id="idTxtPayNm">
+                                <label for="idTxtPayEmail">E-mail:</label>
+                                <input type="text" name="txtPayemail" placeholder="Digite seu e-mail." id="idTxtPayEmail">
+                                <label for="idPwPay">Password:</label>
+                                <input type="password" name="pwPay" placeholder="Digite sua senha" id="idPwPay">
+                            </div>
+                            <h3>Informações de Pagamento</h3>
+                            <div class="pagamento">
 
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
                 <div id="form3">
 
